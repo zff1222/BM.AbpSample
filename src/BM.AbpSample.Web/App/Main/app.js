@@ -18,9 +18,9 @@
         function ($stateProvider, $urlRouterProvider, $locationProvider, $qProvider) {
             $locationProvider.hashPrefix('');
             $urlRouterProvider.otherwise('/');
-            $qProvider.errorOnUnhandledRejections(false);
+            //$qProvider.errorOnUnhandledRejections(false);
 
-            if (abp.auth.hasPermission('Pages.Users')) {
+            if (abp.auth.hasPermission('Pages.Sys.Users')) {
                 $stateProvider
                     .state('users', {
                         url: '/users',
@@ -30,7 +30,7 @@
                 $urlRouterProvider.otherwise('/users');
             }
 
-            if (abp.auth.hasPermission('Pages.Tenants')) {
+            if (abp.auth.hasPermission('Pages.Sys.Tenants')) {
                 $stateProvider
                     .state('tenants', {
                         url: '/tenants',

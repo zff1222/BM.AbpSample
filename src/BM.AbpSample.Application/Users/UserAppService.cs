@@ -11,7 +11,7 @@ using Microsoft.AspNet.Identity;
 namespace BM.AbpSample.Users
 {
     /* THIS IS JUST A SAMPLE. */
-    [AbpAuthorize(PermissionNames.Pages_Users)]
+    [AbpAuthorize(PermissionNames.Pages_Sys_Users)]
     public class UserAppService : AbpSampleAppServiceBase, IUserAppService
     {
         private readonly IRepository<User, long> _userRepository;

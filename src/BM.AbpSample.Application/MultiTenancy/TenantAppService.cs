@@ -15,7 +15,7 @@ using BM.AbpSample.Users;
 
 namespace BM.AbpSample.MultiTenancy
 {
-    [AbpAuthorize(PermissionNames.Pages_Tenants)]
+    [AbpAuthorize(PermissionNames.Pages_Sys_Tenats)]
     public class TenantAppService : AbpSampleAppServiceBase, ITenantAppService
     {
         private readonly TenantManager _tenantManager;
