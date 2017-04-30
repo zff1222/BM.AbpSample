@@ -20,6 +20,40 @@
     <text name="LogIn" value="登录" />
 
     <text name="LoginFailed" value="登录失败!" />
+    <text name="UserLockedOutMessage">该账户已被锁定，请稍后再试.</text>
+
+    <text name="NameSurname" value="姓名" />
+    <text name="UserName" value="用户名" />
+    <text name="Name" value="名" />
+    <text name="Surname" value="姓" />
+    <text name="EmailAddress" value="邮箱地址" />
+
+    <text name="Tenants" value="租户" />
+    <text name="SavedSuccessfully" value="保存成功" />
+    <text name="CreateNewTenant" value="新增租户" />
+    <text name="AdminEmailAddress" value="管理员邮箱" />
+    <text name="Save" value="保存" />
+    <text name="Cancel" value="取消" />
+    <text name="TenantName_Regex_Description" value="租户们至少两个字符，以字母开头，可以包含字母、数字、横杠或下划线" />
+    <text name="DefaultPasswordIs" value="默认密码是: {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="留空将以租主身份登录" />
+    <text name="Register" value="注册" />
+    <text name="OrLoginWith" value="第三方登录" />
+    <text name="WaitingForActivationMessage" value="你的账户需等管理员激活后才能使用" />
+    <text name="TenantSelection" value="租户选择" />
+    <text name="TenantSelection_Detail" value="请选择一个租户." />
+    <text name="Logout" value="退出" />
+
+    <text name="RegisterFormUserNameInvalidMessage">请不要使用邮箱地址作用户名.</text>
+
+    <text name="DatabaseConnectionString" value="数据库连接字符串" />
+    <text name="Users" value="用户" />
+    <text name="IsActive" value="激活" />
+    <text name="FullName" value="全名" />
+    <text name="CreateNewUser" value="新增用户" />
+    <text name="Yes" value="是" />
+    <text name="No" value="否" />
+    <text name="Optional" value="可选" />
     
   </texts>
 </localizationDictionary>
