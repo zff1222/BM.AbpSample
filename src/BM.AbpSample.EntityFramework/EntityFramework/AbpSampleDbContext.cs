@@ -1,4 +1,5 @@
 ﻿using System.Data.Common;
+using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using BM.AbpSample.Authorization.Roles;
 using BM.AbpSample.MultiTenancy;
@@ -42,6 +43,13 @@ namespace BM.AbpSample.EntityFramework
          : base(existingConnection, contextOwnsConnection)
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //修改abp的默认表前缀
+            modelBuilder.ChangeAbpTablePrefix<Tenant, Role, User>("System", null);
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
