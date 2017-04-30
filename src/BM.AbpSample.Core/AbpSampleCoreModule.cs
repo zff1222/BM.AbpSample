@@ -37,6 +37,9 @@ namespace BM.AbpSample
                     )
                 );
 
+            //多语言 未找到对应翻译时 不加[]
+            Configuration.Localization.WrapGivenTextIfNotFound = false;
+
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 
             Configuration.Authorization.Providers.Add<AbpSampleAuthorizationProvider>();

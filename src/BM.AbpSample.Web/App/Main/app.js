@@ -18,7 +18,7 @@
         function ($stateProvider, $urlRouterProvider, $locationProvider, $qProvider) {
             $locationProvider.hashPrefix('');
             $urlRouterProvider.otherwise('/');
-            //$qProvider.errorOnUnhandledRejections(false);
+            $qProvider.errorOnUnhandledRejections(false);
 
             if (abp.auth.hasPermission('Pages.Sys.Users')) {
                 $stateProvider

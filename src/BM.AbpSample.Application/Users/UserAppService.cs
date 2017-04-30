@@ -37,6 +37,7 @@ namespace BM.AbpSample.Users
             CheckErrors(await UserManager.RemoveFromRoleAsync(userId, roleName));
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Sys_Users)]
         public async Task<ListResultDto<UserListDto>> GetUsers()
         {
             var users = await _userRepository.GetAllListAsync();
